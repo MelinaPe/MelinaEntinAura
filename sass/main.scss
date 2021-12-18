@@ -1,0 +1,336 @@
+@import "./parciales/reset";
+@import "./parciales/header"; 
+
+
+
+.fondo{
+    background-color: white; 
+}
+
+
+
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    position:static;
+    text-align: center;
+    color: black;
+}
+
+.description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    position:static;
+    text-align: center;
+    color: black;
+}
+
+.titleforevents{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    position:static;
+    text-align: center;
+    color: black;
+}
+
+.locationimages{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.eventslist{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15mp;
+    color: white;
+    text-align: center;
+}
+
+.fondoevents{
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery{
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+.gallery img {
+    width: 100%;
+}
+.gallery img:nth-child(1){ 
+    grid-column: 2 stan 4;
+}
+.connectlist{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15mp;
+    color: white;
+    text-align: center;
+    background-color:white;
+    list-style: none;
+}
+.fondoconnect{
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+}
+.fondoevents{
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+
+}
+.commentscolortext{
+    color:black
+}
+.fondoform{
+    background-size: cover;
+    background-color: #D8E2DC;
+}
+
+.separador{
+    background-color: black;
+    height: 8px;
+    border: none;
+}
+
+.fondo2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14mp;
+    color: white;
+    text-align: center;
+}
+
+.fondomanagement{
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+}
+.miembros_contenedor{
+    color:black; 
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+}
+.miembros{
+    display:flex;
+    flex-direction: column;
+}
+
+.miembros_img{
+    width:100%; 
+    border-radius: 50%;
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin:auto; 
+    border: 2px solid beige; 
+}
+#grid{
+    display:grid; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    padding: 1rem;
+}
+.miembros_title{
+    font-family: 'Bebas Neue', cursive;
+    color:black; 
+    font-size: 40px;
+    display:flex; 
+    justify-content: center;
+}
+.title_tickets{
+    font-family: 'Bebas Neue', cursive;
+    color:black; 
+    font-size: 40px;
+    display:flex; 
+    justify-content: center;
+}
+.subtitle_tickets{
+    font-family: 'Bebas Neue', cursive;
+    color:black; 
+    font-size: 20px;
+    display:flex; 
+    justify-content: center;
+}
+.gallery_tickets{
+    display: flex;
+    justify-content: center;
+}
+.parrafo_tickets{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.locationbutton{
+    text-align: center;
+}
+.fondo_tickets{
+    background-image: linear-gradient(to bottom,#d8e2dc, white);
+    height: 100%;
+}
+.htmlfondotickets{
+    height: 100%;
+    background-image: linear-gradient(to bottom,#d8e2dc, white);
+}
+
+.btn_submit{
+    position: relative;
+    bottom: 18px;
+}
+.btn_clear{
+    position: relative;
+    bottom: 18px;
+}
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+
+
+  @media only screen and (min-device-width: 768px)
+                     and (max-device-width: 1024px)
+                     and (-webkit-min-device-pixel-ratio: 1){
+      .gallery{
+        display:flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:4rem;
+        row-gap: 2rem;
+      }
+      .gallery img {
+        width:100%;
+        height:auto;
+      }
+  }
+
+  @media screen and (min-device-width: 320px)
+                and (max-device-width: 480px){
+      .gallery{
+        display:flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:1rem;
+        row-gap: 2rem;
+      }
+      .gallery img {
+        width:100%;
+        height:auto;
+      }
+      .miembros_contenedor{
+          flex-wrap: wrap;
+          display:flex; 
+          flex-direction: row;
+          padding:1rem;
+      }
+      .header_list{
+          flex-wrap: wrap;
+      }
+      .fondoevents{
+          flex-wrap: wrap;
+      }
+      .fondomanagement{
+          flex-wrap: wrap;
+      }
+      .fondoconnect{
+          flex-wrap: wrap;
+      }
+  }
+  

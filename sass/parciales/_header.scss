@@ -1,0 +1,14 @@
+.header{
+    flex-wrap: wrap;
+
+    &_list{
+        display:flex;
+        justify-content:center;
+        font-family: 'Roboto', sans-serif;
+        list-style: none;
+    }
+    &_item{
+        margin:10px 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
