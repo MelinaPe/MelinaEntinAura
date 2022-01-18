@@ -1,36 +1,69 @@
 @import "./parciales/reset";
 @import "./parciales/header"; 
+@import "./parciales/title";
+@import "./parciales/variables"; 
 
 
+@mixin font-position-align-color{
+    font-family:'Bebas Neue', cursive;
+    position: static; 
+    text-align: center;
+    color:black;     
+}
 
-.fondo{
-    background-color: white; 
+@mixin color-display-justify-fontf-list{
+  background-color:white;
+  display:flex;
+  justify-content:center;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+$estilos:(
+  color:black, 
+  size: 40px,
+);
+
+/* mapa para seguir implementando el each*/ 
+
+$redes: (
+  --facebook: #3b5999,
+  --google:#dd4b39,
+  --instagram:#e4405f
+); 
+
+/* tengo que seguirlo */
+.p span{
+  display:block;
 }
 
 
 
+.redes{
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  
+}
+
+.fondo{
+  background-color: white; 
+}
+
 .title{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 5rem;
-    position:static;
-    text-align: center;
-    color: black;
+    @include font-position-align-color; 
+    font-size: $size *5;
 }
 
 .description{
+  @include font-position-align-color;
+    font-size: $size;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    position:static;
-    text-align: center;
-    color: black;
 }
-
-.titleforevents{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    position:static;
-    text-align: center;
-    color: black;
+   
+.title--forevents{
+    @include font-position-align-color; 
+    font-size: $size * 2; 
 }
 
 .locationimages{
@@ -48,10 +81,7 @@
 }
 
 .fondoevents{
-    background-color:white;
-    display:flex;
-    justify-content:center;
-    font-family: 'Roboto', sans-serif;
+  @include color-display-justify-fontf-list; 
 }
 
 .gallery{
@@ -76,21 +106,12 @@
     list-style: none;
 }
 .fondoconnect{
-    background-color: white;
-    display:flex;
-    justify-content:center;
-    font-family: 'Roboto', sans-serif;
+  @include color-display-justify-fontf-list; 
 }
-.fondoevents{
-    background-color: white;
-    display:flex;
-    justify-content:center;
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
 
-}
+
 .commentscolortext{
-    color:black
+    color: map-get($estilos, color)
 }
 .fondoform{
     background-size: cover;
@@ -98,7 +119,7 @@
 }
 
 .separador{
-    background-color: black;
+    background-color: map-get($estilos, color);
     height: 8px;
     border: none;
 }
@@ -111,13 +132,11 @@
 }
 
 .fondomanagement{
-    background-color: white;
-    display:flex;
-    justify-content:center;
-    font-family: 'Roboto', sans-serif;
+  @include color-display-justify-fontf-list; 
 }
+
 .miembros_contenedor{
-    color:black; 
+    color:map-get($estilos, color); 
     display: flex; 
     gap: 30px;
     align-items: center;
@@ -136,30 +155,24 @@
     margin:auto; 
     border: 2px solid beige; 
 }
-#grid{
-    display:grid; 
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
-    padding: 1rem;
-}
+
 .miembros_title{
     font-family: 'Bebas Neue', cursive;
     color:black; 
-    font-size: 40px;
+    font-size: map-get($estilos, size);
     display:flex; 
     justify-content: center;
 }
 .title_tickets{
     font-family: 'Bebas Neue', cursive;
-    color:black; 
-    font-size: 40px;
+    color:map-get($estilos, color);
+    font-size: map-get($estilos, size);
     display:flex; 
     justify-content: center;
 }
 .subtitle_tickets{
     font-family: 'Bebas Neue', cursive;
-    color:black; 
+    color:map-get($estilos, color); 
     font-size: 20px;
     display:flex; 
     justify-content: center;
@@ -194,6 +207,11 @@
     position: relative;
     bottom: 18px;
 }
+
+
+
+
+/* aquí empieza mi mobile first */ 
 
 
 .tracking-in-expand {
@@ -334,3 +352,4 @@
       }
   }
   
+

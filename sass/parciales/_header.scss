@@ -1,5 +1,7 @@
 .header{
     flex-wrap: wrap;
+    position:fixed; 
+    justify-content: center;
 
     &_list{
         display:flex;
@@ -7,8 +9,9 @@
         font-family: 'Roboto', sans-serif;
         list-style: none;
     }
+
     &_item{
         margin:10px 10px;
         font-family: 'Roboto', sans-serif;
-    }
+    }        
 }
