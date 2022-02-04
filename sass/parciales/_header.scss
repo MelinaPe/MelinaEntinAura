@@ -1,17 +1,42 @@
 .header{
-    flex-wrap: wrap;
     position:fixed; 
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: #233D4D;
+    width: 100%;
+    text-align: center;
+
+    & ul li a{
+        color:white; 
+        text-decoration: none;
+        padding: 20px 120px;
+        display: block;
+        min-width: 100px;
+    }
+
+    & ul {
+        list-style: none;
+        margin:0px; 
+        padding: 0px;
+    }
+
+    & ul li {
+        display: inline-block;
+        width: 19%;
+    }
+
+    & ul li a:hover{
+        background-color: #619B8A;
+        }
 
     &_list{
-        display:flex;
-        justify-content:center;
         font-family: 'Roboto', sans-serif;
-        list-style: none;
     }
 
     &_item{
-        margin:10px 10px;
         font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
     }        
 }
